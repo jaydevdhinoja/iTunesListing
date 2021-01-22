@@ -1,0 +1,43 @@
+
+.header
+  background: $main-color
+  height: 70px
+  display: flex
+  align-items: center
+
+  a 
+    text-decoration: none
+    margin-right: 30px
+    color: $main-color
+    opacity: .7
+
+    &:hover
+        color: #fff
+        opacity: 1
+        
+    
+    @media (max-width: 375px)
+      max-width: 165px
+      font-size: 9px
+
+  .logo
+    display: flex
+    align-items: center
+    font-size: .9
+    text-decoration: none
+
+    h1
+      color: #fff
+      letter-spacing: -1.2px
+      text-shadow: 1px 2px 2px darken($main-color, 10%)
+
+    img
+      width: 40px
+      margin-right: 5px
+
+  &-menu
+
+    &__item
+      color: $white
+      margin-left: auto
+      opacity: 1

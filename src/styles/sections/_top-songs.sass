@@ -1,0 +1,49 @@
+
+.top-songs
+  display: none
+  min-height: 200px
+  background-color: $off-white
+  margin-top: 20px
+  padding-bottom: 35px
+
+  @media (min-width: 768px)
+    display: block
+
+  &__header
+
+    &-headline
+      margin-bottom: 0
+
+    &-link
+      font-size: 0.9em
+
+  &__item
+    display: flex
+    margin-bottom: 15px
+    align-content: flex-start
+    position: relative
+
+    &-thumbnail
+      max-width: 80px
+      max-height: 80px
+      margin-right: 10px
+
+    &-title
+      font-size: 0.8em
+      font-weight: 400
+
+    &-artist
+      font-size: 0.7em
+      color: $gray
+
+    &-number
+      border: 1px solid #eeeeee
+      font-size: 0.7em
+      display: inline-block
+      padding: 5px
+      border-radius: 10px
+      background: white
+      margin-bottom: 5px
+      position: absolute
+      left: -12px
+      box-shadow: 2px 2px 1px black
