@@ -9,7 +9,6 @@ import { useGlobalListingContext } from "../ContextProvider"
 
 export default function SingleAlbum(props) {
   const { favourites, addToFavourite } = useGlobalListingContext()
-  const { id } = props.match.params;
   const { album, topNumber } = props.location.state;
   const albumId = album.id.attributes["im:id"];
   const albumName = toTitleCase(album["im:name"].label);
@@ -18,6 +17,8 @@ export default function SingleAlbum(props) {
   const albumCategory = album.category.attributes.label;
   const albumDate = getFullYear(album["im:releaseDate"].label);
   const albumCount = album["im:itemCount"].label;
+  const favourite = favourites['albums'].filter(item => item === album.id.attributes["im:id"]).length > 0
+
   return (
     <section>
       <div className="container wrapper">
@@ -27,10 +28,10 @@ export default function SingleAlbum(props) {
               <div className="album-details__thumbnail-wrapper">
                 <img src={albumImage} alt="Album Cover" className="album-details__thumbnail" />
                 <img
-                  src={heartIconRegular}
+                  src={favourite ? heartIconSolid : heartIconRegular}
                   alt="Heart Icon"
                   className="favourite-icon"
-                  onClick={() => alert(albumId)}
+                  onClick={() => addToFavourite('albums',albumId)}
                 />
               </div>
             </div>
