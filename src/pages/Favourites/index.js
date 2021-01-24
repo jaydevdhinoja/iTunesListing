@@ -1,14 +1,14 @@
 import React from "react";
 //Global Context
-import { useGlobalListingContext } from "../ContextProvider"
+import { useGlobalListingContext } from "../../ContextProvider"
 
 // Components
-import Grid from "../components/Grid";
-import Card from "../components/Card";
-import LoadMoreBtn from "../components/elements/LoadMoreBtn";
-import Spinner from "../components/elements/Spinner/Spinner"
+import Grid from "../../components/Grid";
+import Card from "../../components/Card";
+import LoadMoreBtn from "../../components/elements/LoadMoreBtn";
+import Spinner from "../../components/elements/Spinner/Spinner"
 
-const FavouritesPage = () => {
+const Favourites = () => {
   const {songs, albums, loading, error, favourites, addToFavourite} =  useGlobalListingContext()
   const filteredAlbums = albums.filter(song => favourites.albums.findIndex(fav => fav === song.id.attributes["im:id"]) > -1);
   const filteredSongs = songs.filter(song => favourites.songs.findIndex(fav => fav === song.id.attributes["im:id"]) > -1);
@@ -45,4 +45,4 @@ const FavouritesPage = () => {
   );
 };
 
-export default FavouritesPage;
+export default Favourites;

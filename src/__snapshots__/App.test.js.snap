@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<div>
+  <div
+    class="header"
+  >
+    <div
+      class="container d-flex justify-content-between align-items-center"
+    >
+      <div
+        class="d-flex justify-content-between"
+      >
+        <a
+          href="/"
+        >
+          <span
+            class="logo"
+          >
+            <h1>
+              Top Albums
+            </h1>
+          </span>
+        </a>
+        <a
+          href="/songs"
+        >
+          <span
+            class="logo"
+          >
+            <h1>
+              Top Songs
+            </h1>
+          </span>
+        </a>
+      </div>
+      <a
+        href="/favourites"
+      >
+        <li
+          class="header-menu__item link link--white"
+        >
+          Favourites
+        </li>
+      </a>
+    </div>
+  </div>
+  <section
+    class="albums-grid container"
+  >
+    <div
+      class="albums-grid__headline section-headline"
+    >
+      <h2>
+        Top Albums
+      </h2>
+      <div
+        class="albums-grid__headline-search"
+      >
+        <input
+          class="search-input"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+        <img
+          alt="Search"
+          src="search-solid.svg"
+        />
+      </div>
+    </div>
+    <ul
+      class="albums-grid__list"
+    />
+  </section>
+  <section
+    class="footer"
+  >
+    <div
+      class="footer__content container "
+    >
+      <p>
+        Developed by Jaydev Dhinoja
+      </p>
+    </div>
+  </section>
+</div>
+`;

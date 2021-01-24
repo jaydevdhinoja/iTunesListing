@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
 // Components
-import Grid from "../components/Grid";
-import Card from "../components/Card";
-import LoadMoreBtn from "../components/elements/LoadMoreBtn";
-import Spinner from "../components/elements/Spinner/Spinner";
-import TopSongsSection from "../components/TopSongsSection";
+import Grid from "../../components/Grid";
+import Card from "../../components/Card";
+import LoadMoreBtn from "../../components/elements/LoadMoreBtn";
+import Spinner from "../../components/elements/Spinner/Spinner";
+import TopSongsSection from "../../components/TopSongsSection";
 
 //Global Context
-import { useGlobalListingContext } from "../ContextProvider"
+import { useGlobalListingContext } from "../../ContextProvider"
 
 const TopAlbums = () => {
   const {albums, songs, loading, error, favourites, addToFavourite} =  useGlobalListingContext()

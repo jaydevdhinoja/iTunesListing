@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
+import { renderWithContext, InitialState } from './tests/common';
 import App from './App';
 
+import { cleanup } from '@testing-library/react';
+
+afterEach(cleanup);
+
 test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const { container } = renderWithContext(<App />, { value: InitialState });
+
+		expect(container).toMatchSnapshot();
+  
 });

@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Listing renders component 1`] = `
+<div>
+  <section
+    class="albums-grid container"
+  >
+    <div
+      class="albums-grid__headline section-headline"
+    >
+      <h2>
+        Top Albums
+      </h2>
+      <div
+        class="albums-grid__headline-search"
+      >
+        <input
+          class="search-input"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+        <img
+          alt="Search"
+          src="search-solid.svg"
+        />
+      </div>
+    </div>
+    <ul
+      class="albums-grid__list"
+    >
+      <li
+        class="item-card"
+      >
+        <a
+          href="/item/1524099463"
+        >
+          <div
+            class="item-card__mobile-link"
+          />
+        </a>
+        <div
+          class="item-card__thumbnail"
+          style="background-image: url(undefined);"
+        >
+          <img
+            alt="Heart Icon"
+            class="favourite-icon"
+            src="heart-solid.svg"
+          />
+        </div>
+        <h3
+          class="item-card__title"
+        >
+          Black Pumas (Deluxe)
+        </h3>
+        <p
+          class="item-card__artist"
+        >
+          Black Pumas
+        </p>
+        <div
+          class="item-card__overlay"
+        />
+        <p
+          class="item-card__overlay-number"
+        >
+          1
+        </p>
+        <a
+          href="/albums/1524099463"
+        >
+          <span
+            class="item-card__overlay-rect"
+          >
+            <p>
+              See albums
+            </p>
+          </span>
+        </a>
+        <span
+          class="item-card__overlay-shadow"
+        />
+      </li>
+    </ul>
+  </section>
+  <section
+    class="top-songs"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="top-songs__header"
+      >
+        <div
+          class="top-songs__header-headline section-headline"
+        >
+          <h2>
+            Top Songs
+          </h2>
+        </div>
+      </div>
+      <div
+        class="top-songs__list"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-3"
+          >
+            <div
+              class="top-songs__item"
+            >
+              <img
+                alt="Song Undivided"
+                class="top-songs__item-thumbnail"
+              />
+              <div
+                class="top-songs__item-content"
+              >
+                <p
+                  class="top-songs__item-number"
+                >
+                  #
+                  1
+                </p>
+                <h3
+                  class="top-songs__item-title"
+                >
+                  Undivided
+                </h3>
+                <p
+                  class="top-songs__item-artist"
+                >
+                  Tim McGraw & Tyler Hubbard
+                </p>
+                <p
+                  class="top-songs__item-artist"
+                >
+                  2021
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

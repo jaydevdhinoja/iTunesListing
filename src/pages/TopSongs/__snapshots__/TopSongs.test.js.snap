@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Listing renders component 1`] = `
+<div>
+  <section
+    class="albums-grid container"
+  >
+    <div
+      class="albums-grid__headline section-headline"
+    >
+      <h2>
+        Top Songs
+      </h2>
+      <div
+        class="albums-grid__headline-search"
+      >
+        <input
+          class="search-input"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+        <img
+          alt="Search"
+          src="search-solid.svg"
+        />
+      </div>
+    </div>
+    <ul
+      class="albums-grid__list"
+    >
+      <li
+        class="item-card"
+      >
+        <a
+          href="/item/1545178423"
+        >
+          <div
+            class="item-card__mobile-link"
+          />
+        </a>
+        <div
+          class="item-card__thumbnail"
+          style="background-image: url(undefined);"
+        >
+          <img
+            alt="Heart Icon"
+            class="favourite-icon"
+            src="heart-solid.svg"
+          />
+        </div>
+        <h3
+          class="item-card__title"
+        >
+          Undivided
+        </h3>
+        <p
+          class="item-card__artist"
+        >
+          Tim McGraw & Tyler Hubbard
+        </p>
+        <div
+          class="item-card__overlay"
+        />
+        <p
+          class="item-card__overlay-number"
+        >
+          1
+        </p>
+        <span
+          class="item-card__overlay-shadow"
+        />
+      </li>
+    </ul>
+  </section>
+</div>
+`;

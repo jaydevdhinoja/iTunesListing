@@ -27,11 +27,10 @@ const GlobalListingProvider = ({ children }) => {
         } else {
             favs = [...favs, item]
         }
-        setState(prev => {
-            return({
+        setState(prev => ({
             ...prev,
             favourites: {...prev.favourites, [type]: favs}
-        })})
+        }))
     }
 
 	useEffect(
@@ -39,6 +38,7 @@ const GlobalListingProvider = ({ children }) => {
 			const fetchAlbums = async () => {
 				try {
                     const result = await axios(TOP_ALBUMS_API_URL);
+                    console.log(result.data.feed.entry[1])
 					setState(prev => ({
 						...prev,
 						albums: result.data.feed.entry
@@ -54,6 +54,7 @@ const GlobalListingProvider = ({ children }) => {
             const fetchSongs = async () => {
                 try {
                     const result = await axios(TOP_SONGS_API_URL);
+                    console.log(result.data.feed.entry[1])
                     setState(prev => ({
 						...prev,
 						songs: result.data.feed.entry

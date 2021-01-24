@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 //Global Context
-import { useGlobalListingContext } from "../ContextProvider"
+import { useGlobalListingContext } from "../../ContextProvider"
 
 // Components
-import Grid from "../components/Grid";
-import Card from "../components/Card";
-import LoadMoreBtn from "../components/elements/LoadMoreBtn";
-import Spinner from "../components/elements/Spinner/Spinner";
+import Grid from "../../components/Grid";
+import Card from "../../components/Card";
+import LoadMoreBtn from "../../components/elements/LoadMoreBtn";
+import Spinner from "../../components/elements/Spinner/Spinner";
 
 const TopSongs = () => {
   const filterItems = 20;

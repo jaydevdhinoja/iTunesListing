@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Listing renders component 1`] = `
+<div>
+  <div
+    class="favourites-page"
+  >
+    <div
+      class="container wrapper"
+    >
+      <section
+        class="albums-grid container"
+      >
+        <div
+          class="albums-grid__headline section-headline"
+        >
+          <h2>
+            Favourite Albums
+          </h2>
+        </div>
+        <ul
+          class="albums-grid__list"
+        >
+          <li
+            class="item-card"
+          >
+            <a
+              href="/item/1524099463"
+            >
+              <div
+                class="item-card__mobile-link"
+              />
+            </a>
+            <div
+              class="item-card__thumbnail"
+              style="background-image: url(undefined);"
+            >
+              <img
+                alt="Heart Icon"
+                class="favourite-icon"
+                src="heart-solid.svg"
+              />
+            </div>
+            <h3
+              class="item-card__title"
+            >
+              Black Pumas (Deluxe)
+            </h3>
+            <p
+              class="item-card__artist"
+            >
+              Black Pumas
+            </p>
+            <div
+              class="item-card__overlay"
+            />
+            <p
+              class="item-card__overlay-number"
+            >
+              1
+            </p>
+            <a
+              href="/albums/1524099463"
+            >
+              <span
+                class="item-card__overlay-rect"
+              >
+                <p>
+                  See albums
+                </p>
+              </span>
+            </a>
+            <span
+              class="item-card__overlay-shadow"
+            />
+          </li>
+        </ul>
+      </section>
+      <section
+        class="albums-grid container"
+      >
+        <div
+          class="albums-grid__headline section-headline"
+        >
+          <h2>
+            Favourite Songs
+          </h2>
+        </div>
+        <ul
+          class="albums-grid__list"
+        >
+          <li
+            class="item-card"
+          >
+            <a
+              href="/item/1545178423"
+            >
+              <div
+                class="item-card__mobile-link"
+              />
+            </a>
+            <div
+              class="item-card__thumbnail"
+              style="background-image: url(undefined);"
+            >
+              <img
+                alt="Heart Icon"
+                class="favourite-icon"
+                src="heart-solid.svg"
+              />
+            </div>
+            <h3
+              class="item-card__title"
+            >
+              Undivided
+            </h3>
+            <p
+              class="item-card__artist"
+            >
+              Tim McGraw & Tyler Hubbard
+            </p>
+            <div
+              class="item-card__overlay"
+            />
+            <p
+              class="item-card__overlay-number"
+            >
+              1
+            </p>
+            <span
+              class="item-card__overlay-shadow"
+            />
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
+`;
